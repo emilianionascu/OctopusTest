@@ -1,4 +1,5 @@
-﻿@{
+﻿@using System.Configuration
+@{
     ViewBag.Title = "Home Page";
 }
 @section featured {
@@ -43,3 +44,6 @@
         <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
     </li>
 </ol>
+<p>
+    Version: @ConfigurationManager.AppSettings["DeploymentVersion"]
+</p>
